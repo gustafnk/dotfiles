@@ -23,4 +23,5 @@ gnome-terminal &
 google-chrome &
 conky &
 tint2 &
-# nm-applet &
+# wicd-gtk -t
+nm-applet &
