@@ -1,3 +1,0 @@
-PS1="\u@\h:\w\$(git branch 2>/dev/null | grep -e '\* ' | sed 's/^..\(.*\)/{\1}/') \$ "
-
-PATH=$PATH:$HOME/.bin # Add .bin to PATH
