@@ -57,6 +57,4 @@ ex ()
 # PS1='[\u@\h \W]\$ '
 PS1="\u@\h:\w\$(git branch 2>/dev/null | grep -e '\* ' | sed 's/^..\(.*\)/{\1}/') \$ "
 
-export PATH=/home/gustaf/.gem/ruby/2.1.0/bin:$PATH
-
 setxkbmap -option caps:escape 
