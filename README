@@ -13,3 +13,6 @@ Also, put these lines in an autostart, if needed:
   # Set Swedish and English keyboard, with shift-alt as keyboard layout toggler
   setxkbmap -layout 'se,us' -option 'grp:alt_shift_toggle' &
   setxkbmap se -option ctrl:nocaps
+
+See this for .XModmap instructions:
+http://crunchbang.org/forums/viewtopic.php?pid=130841
