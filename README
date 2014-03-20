@@ -5,3 +5,11 @@ Use homesick and follow its instructions.
 homesick clone gustafnk/dotfiles
 cd .homesick/repos/dotfiles
 git submodule update --init --recursive
+
+---
+
+Also, put these lines in an autostart, if needed:
+
+  # Set Swedish and English keyboard, with shift-alt as keyboard layout toggler
+  setxkbmap -layout 'se,us' -option 'grp:alt_shift_toggle' &
+  setxkbmap se -option ctrl:nocaps
