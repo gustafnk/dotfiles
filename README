@@ -3,6 +3,7 @@ Use homesick and follow its instructions.
 ---
 
 homesick clone gustafnk/dotfiles
+homesick symlink
 
 ---
 
