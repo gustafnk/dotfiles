@@ -4,6 +4,8 @@ call pathogen#helptags()
 
 set t_Co=256
 
+let mapleader=","
+
 map <Esc><Esc> :w<CR>
 map <F2> :ls<CR>:b<Space>
 imap ii <Esc>
@@ -29,9 +31,6 @@ set number
 set wrap linebreak nolist
 set hidden
 
-noremap <expr> <silent> <Home> col('.') == match(getline('.'),'\S')+1 ? '0' : '^'
-imap <silent> <Home> <C-O><Home>
-
 "" Searching
 set hlsearch                    " highlight matches
 set incsearch                   " incremental searching
@@ -41,14 +40,8 @@ set smartcase                   " ... unless they contain at least one capital l
 nnoremap <leader>, :CtrlP<cr>
 nnoremap <leader>. :CtrlPTag<cr>
 let g:ctrlp_working_path_mode = ''
-set wildignore+=*/node_modules/*,*/app/components/*
+set wildignore+=*/node_modules/*
 
-
-" For local replace
-nnoremap gr gd[{V%:s/<C-R>///gc<left><left><left>
-
-" For global replace
-nnoremap gR gD:%s/<C-R>///gc<left><left><left>
 
 
 "" From Mislav's .vimcr, https://github.com/mislav/vimfiles/blob/master/vimrc
