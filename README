@@ -3,8 +3,7 @@ Use homesick and follow its instructions.
 ---
 
 homesick clone gustafnk/dotfiles
-cd .homesick/repos/dotfiles
-git submodule update --init --recursive
+homesick symlink
 
 ---
 
