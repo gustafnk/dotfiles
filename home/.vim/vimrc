@@ -49,3 +49,18 @@ nnoremap gr gd[{V%:s/<C-R>///gc<left><left><left>
 
 " For global replace
 nnoremap gR gD:%s/<C-R>///gc<left><left><left>
+
+
+"" From Mislav's .vimcr, https://github.com/mislav/vimfiles/blob/master/vimrc
+
+" Auto-reload buffers when file changed on disk
+set autoread
+
+" Disable swap files; systems don't crash that often these days
+set updatecount=0
+
+" disable cursor keys in normal mode
+map <Left>  :echo "no!"<cr>
+map <Right> :echo "no!"<cr>
+map <Up>    :echo "no!"<cr>
+map <Down>  :echo "no!"<cr>
