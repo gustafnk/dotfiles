@@ -10,3 +10,6 @@
 [submodule "home/.vim/bundle/vim-gitgutter"]
 	path = home/.vim/bundle/vim-gitgutter
 	url = git://github.com/airblade/vim-gitgutter.git
+[submodule "home/.vim/vim-unimpaired"]
+	path = home/.vim/vim-unimpaired
+	url = https://github.com/tpope/vim-unimpaired.git
