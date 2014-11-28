@@ -4,8 +4,6 @@ call pathogen#helptags()
 
 set t_Co=256
 
-let mapleader=","
-
 map <Esc><Esc> :w<CR>
 map <F2> :ls<CR>:b<Space>
 imap ii <Esc>
@@ -37,7 +35,8 @@ set incsearch                   " incremental searching
 set ignorecase                  " searches are case insensitive...
 set smartcase                   " ... unless they contain at least one capital letter
 
-nnoremap <leader>, :CtrlP<cr>
+nnoremap <leader><leader> :CtrlP<cr>
+nnoremap <C-;> :CtrlP<cr>
 nnoremap <leader>. :CtrlPTag<cr>
 let g:ctrlp_working_path_mode = ''
 set wildignore+=*/node_modules/*
